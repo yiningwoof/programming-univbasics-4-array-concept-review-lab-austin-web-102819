@@ -16,6 +16,8 @@ def find_max_value(array)
     if array[counter] > max do
       max = array[counter]
     end
+    counter += 1
+  end
   max
 end
 
