@@ -1,9 +1,7 @@
 def find_element_index(array, value_to_find)
   counter = 0
   while array[counter] do
-    if array[counter] == value_to_find do
-      break
-    end
+    break if array[counter] == value_to_find
     counter += 1
   end
   counter
@@ -13,9 +11,7 @@ def find_max_value(array)
   max = array[0]
   counter = 1
   while array[counter] do
-    if array[counter] > max do
-      max = array[counter]
-    end
+    max = array[counter] if array[counter] > max
     counter += 1
   end
   max
